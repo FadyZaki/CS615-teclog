@@ -63,8 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #content {
     border: none;  
-    background-image: url('images/PadBg.png'); 
-    background-repeat: repeat;
+    background-image: url('images/background.png'); 
     font-size: 18px;
     height: auto;
     width: auto;
