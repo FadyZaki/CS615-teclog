@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 #notes-list {
     width: 300px; 
     float: left; 
-    border-right: 1px solid lightgrey; 
+    border-right: 1px solid black; 
     height: 100%; 
     background-image: url("images/ListBg.png"); 
     background-repeat: repeat;
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #content {
     border: none;  
-    background-image: url('images/notepad-background.jpg'); 
+    background-image: url('images/notepad-background.png'); 
     background-repeat: repeat;
     font-size: 18px;
     height: auto;
