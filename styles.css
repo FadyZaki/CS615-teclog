@@ -46,7 +46,8 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url('images/outer-background.jpg'); 
     background-repeat: no-repeat; 
     height: 100%;
-    width: 100%; 
+    width: 100%;
+    object-fit: contain; 
 }
 
 .notes-list-item {
