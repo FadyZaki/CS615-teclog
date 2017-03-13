@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #content {
     border: none;  
-    background-image: url('images/notepad-background.png'); 
+    background-image: url('images/PadBg.png'); 
     background-repeat: repeat;
     font-size: 18px;
     height: auto;
