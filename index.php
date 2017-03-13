@@ -17,6 +17,11 @@ if(isset($_COOKIE['ACTIVE_NOTE_ID'])) {
     }
 }
 
+else {
+    setcookie("ACTIVE_NOTE_ID", $db->getMaxId());
+    $activeNoteId = $db->getMaxId();
+}
+
 if(isset($_REQUEST['action'])) {
     switch($_REQUEST['action']) {
         case 'delete':
