@@ -26,7 +26,7 @@
                 <span id="timestamp">{$note.last_modified|date_format:"%B %d, %r"}</span>
                 <form action="index.php" method="POST" id="updateForm">
                     <div id="tinymce-holder">
-                        <textarea id="content" name="content">{$note.content}</textarea>
+                        <textarea id="content" name="content" style="margin: 20px; border: 1px grey solid; width: 100%; height: 100%">{$note.content}</textarea>
                     </div>  
                     <input type="hidden" name="action" value="update"/>
                 </form>
