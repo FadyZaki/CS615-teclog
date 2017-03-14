@@ -22,6 +22,7 @@
             {
             document.getElementById('updateForm').submit();
             }
+            return false;
             }>
             Save</a></span>&nbsp;|&nbsp;<span><a href="index.php?action=delete">Delete</a></span>
             <span class="right">Fady Zaki</span>
