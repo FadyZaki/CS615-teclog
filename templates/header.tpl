@@ -9,9 +9,6 @@
   min_height: 100,
   max_height: 350,
   width: 600,
-  min_width: 400,
-  max_width: 950,
-  resize: 'both',
   theme: 'modern',
   plugins: [
     'advlist autolink lists link image charmap print preview hr anchor pagebreak',
