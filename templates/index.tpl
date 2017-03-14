@@ -17,7 +17,7 @@
     
     <div id="notepad">
         <div id="notepad-header" class="header">
-            <span><a href="#" onclick = function() {
+            <span><a href="#" onclick = return function() {
             if(document.getElementById('updateForm') !== null) 
             {
             document.getElementById('updateForm').submit();
