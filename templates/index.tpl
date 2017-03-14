@@ -38,7 +38,7 @@
 </div>
 
     <script type="text/javascript">
-        checkForAvailableContent() {
+        function checkForAvailableContent() {
             if(document.getElementById('updateForm') !== null) 
             {
                 document.getElementById('updateForm').submit();
