@@ -25,7 +25,7 @@
  });</script>
 
  	<script type="text/javascript">
- 		function() {
+ 		checkForAvailableContent() {
             if(document.getElementById('updateForm') !== null) 
             {
                 document.getElementById('updateForm').submit();
