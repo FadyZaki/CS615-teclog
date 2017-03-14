@@ -31,7 +31,9 @@ if(isset($_REQUEST['action'])) {
             $activeNoteId = $newId;
             break;
         case 'update':
+            if($activeNoteId){
             $db->updateNote($_COOKIE['ACTIVE_NOTE_ID'], $_REQUEST['content']);
+            }
             break;
         case 'new':
             $db->createNote("New note.");
