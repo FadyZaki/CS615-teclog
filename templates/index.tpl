@@ -26,7 +26,7 @@
                 <span id="timestamp">{$note.last_modified|date_format:"%B %d, %r"}</span>
                 <form action="index.php" method="POST" id="updateForm">
                     <div id="tinymce-holder">
-                        <textarea><p>{$note.content}</p></textarea>
+                        <textarea id="content" name="content"><p>{$note.content}</p></textarea>
                     </div>  
                     <input type="hidden" name="action" value="update"/>
                 </form>
@@ -38,7 +38,7 @@
     <!-- Facebook -->
     <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
     <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-    
+
 </a>
 </div>
 
