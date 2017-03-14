@@ -25,8 +25,8 @@
                 {if $note.id eq $ACTIVE_NOTE_ID}
                 <span id="timestamp">{$note.last_modified|date_format:"%B %d, %r"}</span>
                 <form action="index.php" method="POST" id="updateForm">
-                    <div>
-                        <textarea id="tinymce-holder">{$note.content}</textarea>
+                    <div id="tinymce-holder">
+                        <textarea>{$note.content}</textarea>
                     </div>  
                     <input type="hidden" name="action" value="update"/>
                 </form>
