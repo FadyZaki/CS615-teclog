@@ -6,9 +6,11 @@
   	<script>tinymce.init({
   selector: 'textarea',
   height: 300,
-  max_height: 370,
+  min_height: 100,
+  max_height: 350,
   width: 600,
-  max_width: 970,
+  min_width: 400,
+  max_width: 950,
   resize: 'both',
   theme: 'modern',
   plugins: [
