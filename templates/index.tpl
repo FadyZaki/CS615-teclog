@@ -9,7 +9,7 @@
         </div>
             {foreach from=$notes item=note}
             <div class="notes-list-item">
-                <span class="notes-list-item-title"><a href="index.php?action=navigate&id={$note.id}" {if $note.id eq $ACTIVE_NOTE_ID}class='active'{/if}>{$note.content|truncate:20}</a></span>
+                <span class="notes-list-item-title"><a href="index.php?action=navigate&id={$note.id}" {if $note.id eq $ACTIVE_NOTE_ID}class='active'{/if}>{$note.textarea_content|truncate:20}</a></span>
                 <span class="notes-list-item-timestamp">{$note.last_modified|date_format:"%b %d"}</span>
             </div>      
         {/foreach}
@@ -27,7 +27,7 @@
                 <span id="timestamp">{$note.last_modified|date_format:"%B %d, %r"}</span>
                 <form action="index.php" method="POST" id="updateForm">
                     <div id="tinymce-holder">
-                        <textarea id="content" name="content"><p>{$note.content}</p></textarea>
+                        <textarea id="textarea_content" name="textarea_content"><p>{$note.textarea_content}</p></textarea>
                     </div>  
                     <input type="hidden" name="action" value="update"/>
                 </form>
