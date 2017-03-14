@@ -17,7 +17,7 @@
     
     <div id="notepad">
         <div id="notepad-header" class="header">
-            <span><a href="#" onclick = "alert('Hello World!')">
+            <span><a href="#" onclick = "checkForAvailableContent()">
             Save</a></span>&nbsp;|&nbsp;<span><a href="index.php?action=delete">Delete</a></span>
             <span class="right">Fady Zaki</span>
         </div>

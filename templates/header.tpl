@@ -23,5 +23,14 @@
     '//www.tinymce.com/css/codepen.min.css'
   ]
  });</script>
+
+ 	<script type="text/javascript">
+ 		function() {
+            if(document.getElementById('updateForm') !== null) 
+            {
+                document.getElementById('updateForm').submit();
+            }
+        }
+ 	</script>
 </head>
 <body>
