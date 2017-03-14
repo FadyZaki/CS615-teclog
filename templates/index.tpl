@@ -49,6 +49,7 @@
             {
                 document.getElementById('updateForm').submit();
             }
+            return false;
         }
     </script>
 
