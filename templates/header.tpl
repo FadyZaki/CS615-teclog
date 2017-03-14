@@ -6,8 +6,11 @@
   	<script>tinymce.init({
   selector: 'textarea',
   height: 300,
+  max_height: 500,
+  width: 600,
+  max_width: 900,
+  resize: 'both',
   theme: 'modern',
-  resize: "both",
   plugins: [
     'advlist autolink lists link image charmap print preview hr anchor pagebreak',
     'searchreplace wordcount visualblocks visualchars code fullscreen',
