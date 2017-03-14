@@ -43,4 +43,13 @@
 </a>
 </div>
 
+    <script type="text/javascript">
+        checkForAvailableContent() {
+            if(document.getElementById('updateForm') !== null) 
+            {
+                document.getElementById('updateForm').submit();
+            }
+        }
+    </script>
+
 {include file="footer.tpl"}

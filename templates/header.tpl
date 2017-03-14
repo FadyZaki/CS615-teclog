@@ -24,13 +24,5 @@
   ]
  });</script>
 
- 	<script type="text/javascript">
- 		checkForAvailableContent() {
-            if(document.getElementById('updateForm') !== null) 
-            {
-                document.getElementById('updateForm').submit();
-            }
-        }
- 	</script>
 </head>
 <body>
