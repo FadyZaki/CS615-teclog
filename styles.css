@@ -45,6 +45,8 @@ h1, h2, h3, h4, h5, h6 {
 #notepad {
     background-image: url('images/outerBg.jpg'); 
     background-repeat: no-repeat;
+    height: 100%;
+    background-size: 100%;
 }
 
 .notes-list-item {

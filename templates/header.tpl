@@ -5,7 +5,7 @@
   	<script src="http://cloud.tinymce.com/stable/tinymce.min.js?apiKey=q1lpm4a6u4z67u8gnkeb14y8etcg9gw680shbcot7bmswssc"></script>
   	<script>tinymce.init({
   selector: 'textarea',
-  height: 500,
+  height: 300,
   theme: 'modern',
   plugins: [
     'advlist autolink lists link image charmap print preview hr anchor pagebreak',
