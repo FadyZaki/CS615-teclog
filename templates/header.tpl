@@ -9,7 +9,6 @@
   max_height: 500,
   width: 600,
   max_width: 900,
-  resize: 'both',
   theme: 'modern',
   plugins: [
     'advlist autolink lists link image charmap print preview hr anchor pagebreak',
