@@ -8,7 +8,7 @@
   height: 300,
   min_height: 100,
   max_height: 350,
-  width: 600,
+  width: 700,
   theme: 'modern',
   plugins: [
     'advlist autolink lists link image charmap print preview hr anchor pagebreak',
