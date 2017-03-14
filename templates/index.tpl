@@ -17,7 +17,7 @@
     
     <div id="notepad">
         <div id="notepad-header" class="header">
-            <span><a href="#" onclick = "checkForAvailableContent()">
+            <span><a href="#" onclick = "submitIfContentIsAvailable()">
             Save</a></span>&nbsp;|&nbsp;<span><a href="index.php?action=delete">Delete</a></span>
             <span class="right">Fady Zaki</span>
         </div>
@@ -38,7 +38,7 @@
 </div>
 
     <script type="text/javascript">
-        function checkForAvailableContent() {
+        function submitIfContentIsAvailable() {
             if(document.getElementById('updateForm') !== null) 
             {
                 document.getElementById('updateForm').submit();
