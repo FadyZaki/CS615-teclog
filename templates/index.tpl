@@ -35,12 +35,6 @@
             {/foreach}
         </div>
     </div>
-
-    <!-- Facebook -->
-    <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
-    <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-
-</a>
 </div>
 
     <script type="text/javascript">
