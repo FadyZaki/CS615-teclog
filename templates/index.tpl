@@ -1,6 +1,6 @@
 {include file="header.tpl" title="miNotes"}
 
-<div id="big-container">
+<div>
     
     <div id="notes-list">
         <div id="notes-list-header" class="header">
