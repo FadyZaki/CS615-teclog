@@ -9,7 +9,7 @@
         </div>
             {foreach from=$notes item=note}
             <div class="notes-list-item">
-                <span class="notes-list-item-title"><a href="index.php?action=navigate&id={$note.id}" {if $note.id eq $ACTIVE_NOTE_ID}class='active'{/if}>{$note.content}</a></span>
+                <span class="notes-list-item-title"><a href="index.php?action=navigate&id={$note.id}" {if $note.id eq $ACTIVE_NOTE_ID}class='active'{/if}>{$note.content|striptags}</a></span>
                 <span class="notes-list-item-timestamp">{$note.last_modified|date_format:"%b %d"}</span>
             </div>      
         {/foreach}
