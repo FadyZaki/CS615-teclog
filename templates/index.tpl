@@ -34,15 +34,14 @@
                 {/if}
             {/foreach}
         </div>
-           
+    </div>
+
 <a class="social-icon facebook"  href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook"></a>
 
 <script language="javascript">
     function fbshareCurrentPage()
     {window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false; }
 </script>
-    </div>
-
 </div>
 
     <script type="text/javascript">
