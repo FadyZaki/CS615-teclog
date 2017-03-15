@@ -18,7 +18,7 @@
     <div id="notepad">
         <div id="notepad-header" class="header">
             <span><a href="#" onclick = "submitIfContentIsAvailable()">
-            Save</a></span>&nbsp;|&nbsp;<span><a href="index.php?action=delete">Delete</a></span>|<span><a href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()" target="_blank"><img src="images/fbShare.png" alt="Share on Facebook" rel="no-follow" /></a></span>
+            <img src="images/save.png" alt="Save Note"/></a></span>&nbsp;|&nbsp;<span><a href="index.php?action=delete">Delete</a></span>|<span><a href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()" target="_blank"><img src="images/fbShare.png" alt="Share on Facebook" rel="no-follow" /></a></span>
             <span class="right">Fady Zaki</span>
         </div>
         <div>
