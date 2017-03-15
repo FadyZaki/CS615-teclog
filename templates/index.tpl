@@ -34,8 +34,13 @@
                 {/if}
             {/foreach}
         </div>
-            <a class="w-inline-block social-share-btn fb" href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;">
-            </a>
+           
+<a class="social-icon facebook"  href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook"></a>
+
+<script language="javascript">
+    function fbshareCurrentPage()
+    {window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false; }
+</script>
     </div>
 
 </div>
