@@ -35,6 +35,8 @@
             {/foreach}
         </div>
     </div>
+    <a class="w-inline-block social-share-btn fb" href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;">
+    </a>
 </div>
 
     <script type="text/javascript">
