@@ -36,15 +36,7 @@
         </div>
     </div>
 
-<a class="social-icon facebook"  href="javascript:fbshareCurrentPage()" target="_blank" alt="Share on Facebook"></a>
-
-<script language="javascript">
-    function fbshareCurrentPage()
-    {
-        window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href)+"&t="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false; 
-    }
-</script>
-</div>
+<script>function fbs_click() {u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}</script><a href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()" target="_blank"><img src="images/fbShare" alt="Share on Facebook" rel="no-follow" /></a>
 
     <script type="text/javascript">
         function submitIfContentIsAvailable() {
