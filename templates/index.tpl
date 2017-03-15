@@ -18,7 +18,7 @@
     <div id="notepad">
         <div id="notepad-header" class="header">
             <span><a href="#" onclick = "submitIfContentIsAvailable()">
-            Save</a></span>&nbsp;|&nbsp;<span><a href="index.php?action=delete">Delete</a></span>
+            Save</a></span>&nbsp;|&nbsp;<span><a href="index.php?action=delete">Delete</a></span>|&nbsp;<span><a href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()" target="_blank"><img src="images/fbShare.png" alt="Share on Facebook" rel="no-follow" /></a></span>
             <span class="right">Fady Zaki</span>
         </div>
         <div>
@@ -37,12 +37,8 @@
     </div>
 
 <script type="text/javascript">
-function fbs_click() 
-{
-    u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
-    }
+
 </script>
-<a href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()" target="_blank"><img src="images/fbShare.png" alt="Share on Facebook" rel="no-follow" /></a>
 
     <script type="text/javascript">
         function submitIfContentIsAvailable() {
@@ -51,6 +47,11 @@ function fbs_click()
                 document.getElementById('updateForm').submit();
             }
             return false;
+        }
+
+        function fbs_click() 
+        {
+            u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
         }
     </script>
 
