@@ -21,6 +21,7 @@
             <a class="icon" href="index.php?action=delete"><img src="images/delete.png" alt="Delete Note"/></a>
             <a class="icon" href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()" target="_blank"><img src="images/fbShare.png" alt="Share on Facebook" rel="no-follow" /></a>
             <span class="right">Fady Zaki</span>
+            <a href="http://twitter.com/home?status=Currentlyreading <?php the_permalink(); ?>" title="Click to share this post on Twitter""><img src="images/twitterShare.png" alt="Share on Twitter" rel="no-follow"></a>
         </div>
         <div>
             {foreach from=$notes item=note}
