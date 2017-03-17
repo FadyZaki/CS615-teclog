@@ -3,6 +3,7 @@
 class Db {
     
     protected $con;
+    //Setting the database parameters 
     private $host = "eu-cdbr-azure-north-e.cloudapp.net";
     private $user = "bd80b4620f7590";
     private $pwd = "f82b669d";
@@ -29,6 +30,7 @@ class Db {
         
     }
 
+    //Create table notes in the database
     public function createTable() {
         try {
             $sql = "CREATE TABLE IF NOT EXISTS notes (
@@ -44,6 +46,7 @@ class Db {
         }
     }
 
+    //Drop table notes from the database
     public function dropTable() {
         try {
             $sql = "DROP TABLE notes;";
@@ -54,6 +57,7 @@ class Db {
         }
     }
 
+    //Create a new entry in the table notes
     public function createNote($content) {
         try {
             $query = $this->con->prepare("INSERT INTO notes (content) VALUES (:content);");
@@ -64,6 +68,7 @@ class Db {
         }
     }
 
+    //Retrieve all notes from the database to be displayed
     public function getNotes() {
         try{
             $query = $this->con->prepare("SELECT * FROM notes ORDER BY last_modified DESC;");
@@ -74,6 +79,7 @@ class Db {
         }
     }
 
+    //Retrieve the note with the minimum id
     public function getMinId() {
         try{
             $query = $this->con->prepare("SELECT min(id) FROM notes;");
@@ -84,6 +90,7 @@ class Db {
         }
     }
 
+    //Retrieve the note with the maximum id
     public function getMaxId() {
         try{       
             $query = $this->con->prepare("SELECT max(id) FROM notes;");
@@ -94,6 +101,7 @@ class Db {
         }
     }
 
+    //Check if the note which has this id is available in the database
     public function isValid($id) {
         try{
             $query = $this->con->prepare("SELECT * FROM notes WHERE id = :id;");
@@ -105,6 +113,7 @@ class Db {
         }
     }
 
+    //Delete note from the database 
     public function deleteNote($id) {
         try{          
             $query = $this->con->prepare("DELETE FROM notes WHERE id = :id;");
@@ -115,6 +124,7 @@ class Db {
         }
     }
 
+    //Update note with new content provided by the user
     public function updateNote($id, $newContent) {
         try{
             $query = $this->con->prepare("UPDATE notes
