@@ -22,7 +22,7 @@
             <a class="icon" href="javascript:void(0)" onclick="javascript:genericSocialShare('http://www.facebook.com/share.php?url=')"><img src="images/fbShare.png" alt="Share on Facebook" /></a>
             <a class="icon" href="javascript:void(0)" onclick="javascript:genericSocialShare('http://twitter.com/share?url=')"><img src="images/twitterShare.png" alt="Share on Twitter"></a>
             <a class="icon" href="javascript:void(0)" onclick="javascript:genericSocialShare('https://plus.google.com/share?url=')"><img src="images/googleplusShare.png" alt="Share on GooglePlus"></a>
-            <span class="right">{Name}</span>
+            <span class="right">Fady Zaki</span>
         </div>
         <div>
             {foreach from=$notes item=note}
