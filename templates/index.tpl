@@ -45,7 +45,7 @@
         
 
         function genericSocialShare(url){
-            window.open(url+document.URL,'sharer','toolbar=0,status=0,width=700,height=500');
+            window.open(url+window.location.href,'sharer','toolbar=0,status=0,width=700,height=500');
             return true;
         }
 
