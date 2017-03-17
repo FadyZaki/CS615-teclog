@@ -20,7 +20,7 @@
             <a class="icon" href="#" onclick = "return submitIfContentIsAvailable()"><img src="images/save.png" alt="Save Note"/></a>
             <a class="icon" href="index.php?action=delete"><img src="images/delete.png" alt="Delete Note"/></a>
             <a class="icon" href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()" target="_blank"><img src="images/fbShare.png" alt="Share on Facebook" rel="no-follow" /></a>
-            <a class="icon" href="https://twitter.com/intent/tweet" title="Click to share this post on Twitter" target="_blank" rel=location.href><img src="images/twitterShare.png" alt="Share on Twitter"></a>
+            <a class="icon" href="http://twitter.com/share?u=<url>" onclick="return twitter_click()" target="_blank" ><img src="images/twitterShare.png" alt="Share on Twitter"></a>
             <span class="right">Fady Zaki</span>
         </div>
         <div>
@@ -54,6 +54,11 @@
         function fbs_click() 
         {
             u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
+        }
+
+        function twitter_click() 
+        {
+            u=location.href;t=document.title;window.open('http://twitter.com/share?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
         }
     </script>
 
