@@ -17,11 +17,13 @@
     
     <div id="notepad">
         <div id="notepad-header" class="header">
+        <a href="javascript:void(0)" onclick="javascript:genericSocialShare('[CustomSocialShareLink]')">[Social Media Share Text/Image]</a>
             <a class="icon" href="#" onclick = "return submitIfContentIsAvailable()"><img src="images/save.png" alt="Save Note"/></a>
             <a class="icon" href="index.php?action=delete"><img src="images/delete.png" alt="Delete Note"/></a>
             <a class="icon" href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()" target="_blank"><img src="images/fbShare.png" alt="Share on Facebook" /></a>
             <a class="icon" href="http://twitter.com/share?u=<url>" onclick="return twitter_click()" target="_blank" ><img src="images/twitterShare.png" alt="Share on Twitter"></a>
             <a class="icon" href="https://plus.google.com/share?u=<url>" onclick="return googleplus_click()" target="_blank" ><img src="images/googleplusShare.png" alt="Share on GooglePlus"></a>
+            <a href="javascript:void(0)" onclick="javascript:genericSocialShare('https://plus.google.com/share?url=<url>')"><img src="images/googleplusShare.png" alt="Share on GooglePlus"></a>
             <span class="right">Fady Zaki</span>
         </div>
         <div>
@@ -39,11 +41,17 @@
         </div>
     </div>
 
-<script type="text/javascript">
 
-</script>
 
     <script type="text/javascript">
+        
+
+        function genericSocialShare(url){
+            window.open(url,'sharer','toolbar=0,status=0,width=648,height=395');
+            return true;
+        }
+
+
         function submitIfContentIsAvailable() {
             if(document.getElementById('updateForm') !== null) 
             {
