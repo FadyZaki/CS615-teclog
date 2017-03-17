@@ -21,7 +21,7 @@
             <a class="icon" href="index.php?action=delete"><img src="images/delete.png" alt="Delete Note"/></a>
             <a class="icon" href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()" target="_blank"><img src="images/fbShare.png" alt="Share on Facebook" /></a>
             <a class="icon" href="http://twitter.com/share?u=<url>" onclick="return twitter_click()" target="_blank" ><img src="images/twitterShare.png" alt="Share on Twitter"></a>
-            <a class="icon" href="https://plus.google.com/share?u=[url]" onclick="return googleplus_click()" target="_blank" ><img src="images/googleplusShare.png" alt="Share on GooglePlus"></a>
+            <a class="icon" href="https://plus.google.com/share?u=<url>" onclick="return googleplus_click()" target="_blank" ><img src="images/googleplusShare.png" alt="Share on GooglePlus"></a>
             <span class="right">Fady Zaki</span>
         </div>
         <div>
@@ -64,7 +64,7 @@
 
         function googleplus_click() 
         {
-            u=location.href;t=document.title;window.open('https://plus.google.com/share?url=<url>'+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
+            u=location.href;t=document.title;window.open('https://plus.google.com/share?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
         }
     </script>
 
