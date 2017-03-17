@@ -50,7 +50,8 @@
                 window.open(url+encodeURIComponent(window.location.href),'sharer','toolbar=0,status=0,width=700,height=500');
             }
             else {
-               window.open(url+encodeURIComponent(window.location.href.split('?')[0]),'sharer','toolbar=0,status=0,width=700,height=500'); 
+               var URL_encoded = url+encodeURIComponent(window.location.href.split('?')[0];
+               window.open(URL_encoded),'sharer','toolbar=0,status=0,width=700,height=500'); 
             }
             return true;
         }
