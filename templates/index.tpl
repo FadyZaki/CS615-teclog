@@ -46,7 +46,7 @@
         
 
         function genericSocialShare(url){
-            window.open(url+document.URL,'sharer','toolbar=0,status=0,width=648,height=395');
+            window.open(url+document.URL,'sharer','toolbar=0,status=0,width=700,height=500');
             return true;
         }
 
@@ -57,21 +57,6 @@
                 document.getElementById('updateForm').submit();
             }
             return false;
-        }
-
-        function fbs_click() 
-        {
-            u=location.href;t=document.title;window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
-        }
-
-        function twitter_click() 
-        {
-            u=location.href;t=document.title;window.open('http://twitter.com/share?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
-        }
-
-        function googleplus_click() 
-        {
-            u=location.href;t=document.title;window.open('https://plus.google.com/share?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
         }
     </script>
 
