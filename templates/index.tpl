@@ -23,7 +23,7 @@
             <a class="icon" href="http://www.facebook.com/share.php?u=<url>" onclick="return fbs_click()" target="_blank"><img src="images/fbShare.png" alt="Share on Facebook" /></a>
             <a class="icon" href="http://twitter.com/share?u=<url>" onclick="return twitter_click()" target="_blank" ><img src="images/twitterShare.png" alt="Share on Twitter"></a>
             <a class="icon" href="https://plus.google.com/share?u=<url>" onclick="return googleplus_click()" target="_blank" ><img src="images/googleplusShare.png" alt="Share on GooglePlus"></a>
-            <a href="javascript:void(0)" onclick="javascript:genericSocialShare('https://plus.google.com/share?url=<url>')"><img src="images/googleplusShare.png" alt="Share on GooglePlus"></a>
+            <a href="javascript:void(0)" onclick="javascript:genericSocialShare('https://plus.google.com/share?url=')"><img src="images/googleplusShare.png" alt="Share on GooglePlus"></a>
             <span class="right">Fady Zaki</span>
         </div>
         <div>
@@ -47,7 +47,7 @@
         
 
         function genericSocialShare(url){
-            window.open(url,'sharer','toolbar=0,status=0,width=648,height=395');
+            window.open(url+document.URL,'sharer','toolbar=0,status=0,width=648,height=395');
             return true;
         }
 
