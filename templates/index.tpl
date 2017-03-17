@@ -49,9 +49,6 @@
             if (getURLParameter('action') == 'navigate') {
                 window.open(url+encodeURIComponent(window.location.href),'sharer','toolbar=0,status=0,width=700,height=500');
             }
-            else {
-               window.open(url+encodeURIComponent([location.protocol, '//', location.host, location.pathname].join('')),'sharer','toolbar=0,status=0,width=700,height=500'); 
-            }
             return true;
         }
 
