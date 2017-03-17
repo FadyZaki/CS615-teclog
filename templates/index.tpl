@@ -52,7 +52,7 @@
             else {
                window.open(url+encodeURIComponent(window.location.href.split('?')[0]),'sharer','toolbar=0,status=0,width=700,height=500'); 
             }
-            return false;
+            return true;
         }
 
 
