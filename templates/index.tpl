@@ -18,7 +18,7 @@
     <div id="notepad">
         <div id="notepad-header" class="header">
             <a class="icon" href="#" onclick = "return submitIfContentIsAvailable()"><img src="images/save.png" alt="Save Note"/></a>
-            <a class="icon" href="index.php?action=delete"><img src="images/delete.png" alt="Delete Note"/></a>
+            <a class="icon" href="#" onclick = "return deleteIfContentIsAvailable()"><img src="images/delete.png" alt="Delete Note"/></a>
             <a class="icon" href="javascript:void(0)" onclick="javascript:genericSocialShare('http://www.facebook.com/sharer.php?url=')"><img src="images/fbShare.png" alt="Share on Facebook" ></a>
             <a class="icon" href="javascript:void(0)" onclick="javascript:genericSocialShare('http://twitter.com/share?url=')"><img src="images/twitterShare.png" alt="Share on Twitter"></a>
             <a class="icon" href="javascript:void(0)" onclick="javascript:genericSocialShare('https://plus.google.com/share?url=')"><img src="images/googleplusShare.png" alt="Share on GooglePlus"></a>
@@ -34,6 +34,9 @@
                     </div>  
                     <input type="hidden" name="action" value="update"/>
                 </form>
+                <form action="index.php" method="POST" id="deleteForm">
+                    <input type="hidden" name="action" value="delete"/>
+                </form>                
                 {/if}
             {/foreach}
         </div>
@@ -54,9 +57,15 @@
 
 
         function submitIfContentIsAvailable() {
-            if(document.getElementById('updateForm') !== null) 
-            {
+            if (getURLParameter('action') == 'navigate' || getURLParameter('action') == 'new') {
                 document.getElementById('updateForm').submit();
+            }
+            return false;
+        }
+
+        function deleteIfContentIsAvailable() {
+            if (getURLParameter('action') == 'navigate' || getURLParameter('action') == 'new') {
+                document.getElementById('deleteForm').submit();
             }
             return false;
         }
