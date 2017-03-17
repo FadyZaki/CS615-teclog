@@ -51,7 +51,7 @@
             }
             else {
                var URL_encoded = url+encodeURIComponent(window.location.href.split('?')[0];
-               window.open(URL_encoded),'sharer','toolbar=0,status=0,width=700,height=500'); 
+               window.open(URL_encoded,'sharer','toolbar=0,status=0,width=700,height=500'); 
             }
             return true;
         }
