@@ -45,7 +45,10 @@
         
 
         function genericSocialShare(url){
-            window.open(url+encodeURIComponent(window.location.href),'sharer','toolbar=0,status=0,width=700,height=500');
+            
+            if (getURLParameter('action') == 'navigate') {
+                window.open(url+encodeURIComponent(window.location.href),'sharer','toolbar=0,status=0,width=700,height=500');
+            }
             return true;
         }
 
@@ -56,6 +59,10 @@
                 document.getElementById('updateForm').submit();
             }
             return false;
+        }
+
+        function getURLParameter(name) {
+            return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
         }
     </script>
 
